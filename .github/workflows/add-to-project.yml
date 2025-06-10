@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add issue to GitHub Project
-        uses: peter-evans/add-to-project@v0.5.0
+        uses: peter-evans/create-or-update-project-card@v1
         with:
           project-url: https://github.com/users/Mathiszeggane/projects/1
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
