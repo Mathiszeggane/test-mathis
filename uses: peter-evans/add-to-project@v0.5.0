@@ -1,4 +1,4 @@
-name: Add issue to GitHub Project
+name: Add new issues to GitHub Project v2
 
 on:
   issues:
@@ -8,8 +8,9 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - name: Add issue to GitHub Project
-        uses: peter-evans/add-to-project@v0.5.0
+      - name: Add issue to project
+        uses: github/add-to-project@v1
         with:
           project-url: https://github.com/users/Mathiszeggane/projects/1
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
