@@ -7,9 +7,14 @@ on:
 jobs:
   add-to-project:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
     steps:
       - name: Add issue to GitHub Project
         uses: actions/add-to-project@main
         with:
-          project-url: https://github.com/users/Mathiszeggane/projects/5/views/1
+          project-url: https://github.com/users/Mathiszeggane/projects/5
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
