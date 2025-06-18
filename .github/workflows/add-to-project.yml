@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-      projects: write
+      actions: write
 
     steps:
       - name: Add issue to GitHub Project
