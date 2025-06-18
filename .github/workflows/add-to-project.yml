@@ -10,14 +10,12 @@ jobs:
     permissions:
       contents: read
       issues: write
-      actions: write
+      projects: write
 
     steps:
       - name: Add issue to GitHub Project
         uses: actions/add-to-project@main
         with:
-          project-url: https://github.com/users/Mathiszeggane/projects/5/views/1
+          project-number: 1
+          user: Mathiszeggane
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-
-
