@@ -10,6 +10,7 @@ jobs:
     permissions:
       contents: read
       issues: write
+      projects: write
 
     steps:
       - name: Add issue to GitHub Project
@@ -17,4 +18,6 @@ jobs:
         with:
           project-url: https://github.com/users/Mathiszeggane/projects/5
           github-token: ${{ secrets.GITHUB_TOKEN }}
+
+
 
