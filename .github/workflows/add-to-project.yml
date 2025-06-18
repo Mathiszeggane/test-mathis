@@ -10,11 +10,8 @@ jobs:
     steps:
       - name: Add issue to GitHub Project
         uses: actions/add-to-project@main
-
-
         with:
           project-url: https://github.com/users/Mathiszeggane/projects/1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
 
