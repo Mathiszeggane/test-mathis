@@ -11,6 +11,7 @@ jobs:
       contents: read
       issues: write
       actions: write
+      projects: write
 
     steps:
       - name: Add issue to GitHub Project
